@@ -5,15 +5,38 @@ import './header.css'
 class Header extends Component {
     render() {
       return (
-        <nav className="head">
-          <div className="head-menu">
-            <div className="head-brand">
-              <a className="head-brand-logo" href="/home">
+        <div className="header-bar">
+    
+            <div className="header-tile">
+
+                <div className="links">
+                <a className="header-content icon" href="/home">
                
-              </a>
+                </a>
+                </div>
             </div>
-          </div>
-        </nav>
+
+            <div className="header-tile">
+                <div className="links">
+                <a className="header-content">
+                    <input className="search" type="text" placeholder="Search" />
+                    <button className="searchIcon"> o' </button>
+                </a>
+                </div>
+            </div>
+        
+            <div className="header-tile">
+                <div className="links">
+                <div className="header-content">
+                    <a className="explore"></a>
+                    <a className="notification"></a>
+                    
+                    <a className="profile"></a>
+                </div>
+                </div>
+
+            </div> 
+        </div>
       );
     }
   }

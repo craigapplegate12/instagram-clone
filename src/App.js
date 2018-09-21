@@ -3,6 +3,7 @@ import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/header';
+import Info from './components/Info/info';
 
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <Info />
       </div>
     );
   }
