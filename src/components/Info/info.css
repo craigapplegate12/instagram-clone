@@ -1,0 +1,32 @@
+.info-bar {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: space-around;
+    width: auto;
+    border-bottom: solid rgba(158, 153, 153, 0.61) 1px;
+    padding: 30px;
+}
+.profile-pic{
+    margin: 75px;
+    padding: 20px;
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+}
+.profile-bio{
+    margin: 75px;
+    padding: 20px;
+    border: solid black 1px;
+    width: 500px;
+    height: fit-content;
+}
+.bio-head{
+    font-size: 16pt;
+    display: flex;
+    flex-direction: row;
+}
+.head-separate{
+    border: solid 1px black;
+    padding: 2px;
+}

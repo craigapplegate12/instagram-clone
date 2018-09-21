@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/header';
 import Info from './components/Info/info';
+import Body from './components/Body/body';
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
       <div>
         <Header />
         <Info />
+        <Body />
       </div>
     );
   }
