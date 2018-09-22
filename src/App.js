@@ -17,19 +17,26 @@ class App extends Component {
       store: []
     }
     }
+    
   
   
   componentDidMount(){
-    axios.get('https://randomuser.me/api/?inc=name,picture,login&results=10')
+    axios.get('https://randomuser.me/api/?inc=name,picture,login&results=26')
     .then(people=>{
       const userDB= people.data.results.map(person => {
         return {
           firstName: person.name.first,
           lastName: person.name.last,
           photo: person.picture.large,
-          userName: person.login.username
+          userName: person.login.username,
+          favoritePhotos: [],
+          userBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non. Ultricies tristique nulla aliquet enim. Id porta nibh venenatis cras.',
+          numPosts: 21,
+          followers: 245,
+          following: 94
         }
       })
+      
       console.log(userDB);
       this.setState({
         users: userDB   
@@ -57,10 +64,10 @@ class App extends Component {
       )
     return (
       <div>
-        {listUsers}
         <Header />
+        <div className="option">{listUsers}</div>
         <Info person= {this.state.selectedUser} />
-        <Body />
+        <Body numPosts = {this.state.selectedUser.numPosts} />
       </div>
     );
   }
