@@ -8,25 +8,29 @@
     padding: 30px;
 }
 .profile-pic{
-    margin: 75px;
+    margin: 40px;
     padding: 20px;
-    border: solid black 1px;
-    width: 100px;
-    height: 100px;
+    width: fit-content;
+    height: fit-content;
 }
 .profile-bio{
-    margin: 75px;
+    margin: 20px;
     padding: 20px;
     border: solid black 1px;
-    width: 500px;
+    width: 700px;
     height: fit-content;
 }
 .bio-head{
     font-size: 16pt;
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    margin: 10px;
 }
 .head-separate{
     border: solid 1px black;
     padding: 2px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }

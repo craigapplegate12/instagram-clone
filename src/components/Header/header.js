@@ -19,8 +19,8 @@ class Header extends Component {
             <div className="header-tile">
                 <div className="links">
                 <a className="header-content">
-                    <input className="search" type="text" placeholder="Search" />
-                    <button className="searchIcon"> o' </button>
+                    <select className="search" type="text" placeholder="Select Profile" />
+                    <button className="searchIcon"> Go! </button>
                 </a>
                 </div>
             </div>
